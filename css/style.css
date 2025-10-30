@@ -1,4 +1,3 @@
-
 :root {
     --cor-primaria: #005A9C;
     --cor-secundaria: #005A9C;
@@ -13,12 +12,17 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+span {
+    color: var(--cor-primaria);
+    font-weight: bold;
 }
 
 header {
@@ -29,7 +33,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 header .logo {
@@ -60,10 +64,10 @@ nav a:hover {
 
 main {
     max-width: 1200px;
-    width: 100%; 
-    margin: 20px auto; 
+    width: 100%;
+    margin: 20px auto;
     padding: 0 20px;
-    flex-grow: 1; 
+    flex-grow: 1;
     box-sizing: border-box;
 }
 
@@ -81,6 +85,17 @@ main img {
     border-radius: 8px;
     display: block;
     margin: 15px auto;
+}
+
+.missao {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px; 
+    margin: 15px auto 30px auto; 
 }
 
 footer {
@@ -104,7 +119,7 @@ footer {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    width: 100%; 
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -113,8 +128,8 @@ footer {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    margin: 0; 
-    border-radius: 0; 
+    margin: 0;
+    border-radius: 0;
 }
 
 .projeto-card h2 {
@@ -125,7 +140,7 @@ footer {
 
 .projeto-card p {
     padding: 0 15px 15px 15px;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .cta-secao {
@@ -149,7 +164,7 @@ footer {
 }
 
 .cta-botao:hover {
-    background-color: #1a78bb;
+    background-color: #1a8fe2; 
 }
 
 form fieldset {
@@ -163,7 +178,7 @@ form fieldset legend {
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--cor-primaria);
-    padding: 0 10px; 
+    padding: 0 10px;
 }
 
 form label {
@@ -182,47 +197,44 @@ form select {
     box-sizing: border-box;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
+}
+
+form .cta-botao {
+    border: none;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
     .projeto-card {
         width: calc(50% - 10px);
-        max-width: none; 
+        max-width: none;
     }
 }
 
 @media (min-width: 1024px) {
     .projeto-card {
-        width: calc(33.333% - 14px); 
+        width: calc(33.333% - 14px);
     }
 }
 
-p body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    color: #333;
+.step {
+    display: none; 
+    transition: all .3s ease;
 }
 
-.imagenslogo {
-  display: flex;
-  flex-direction: row; 
-
-  justify-content: flex-start; 
-
-  align-items: center; 
+.step.active {
+    display: block;
+    animation: fade .4s ease-in;
 }
 
-.imagenslogo img {
-  margin-right: 15px; 
-}
-
-span {
-    color: #005A9C;
-}
-
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    color: #333;
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
