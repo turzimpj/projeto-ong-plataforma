@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
         <h1 class="logo">Faz Bem</h1> 
-        <nav>
+        
+        <button id="btn-mobile" 
+                aria-expanded="false" 
+                aria-controls="main-nav" 
+                aria-label="Abrir menu">
+            <span id="hamburger"></span> </button>
+
+        <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
@@ -45,6 +51,8 @@
     <footer>
         <p>&copy; 2025 Faz Bem. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/main.js"></script>
 
 </body>
 </html>

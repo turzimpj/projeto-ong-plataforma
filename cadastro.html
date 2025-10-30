@@ -10,7 +10,15 @@
 
     <header>
         <h1 class="logo">Faz Bem</h1> 
-        <nav>
+        
+        <button id="btn-mobile" 
+                aria-expanded="false" 
+                aria-controls="main-nav" 
+                aria-label="Abrir menu">
+            <span id="hamburger"></span> 
+        </button>
+
+        <nav id="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
@@ -20,11 +28,12 @@
     </header>
 
     <main>
-        <h1>Participe!</h1>
-        <p>Preencha o formulário abaixo para se cadastrar como voluntário ou doador.</p>
+        <section class="pagina-header">
+            <h1>Participe!</h1>
+            <p>Preencha o formulário abaixo para se cadastrar como voluntário ou doador.</p>
+        </section>
 
         <form action="#" method="post">
-            
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <div>
@@ -78,30 +87,9 @@
                 <div>
                     <label for="estado">Estado:</label>
                     <select id="estado" name="estado" required>
-                       <option value="AC">Acre</option>
+                        <option value="">Selecione...</option>
+                        <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
                         <option value="SP">São Paulo</option>
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>

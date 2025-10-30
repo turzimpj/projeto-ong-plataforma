@@ -2,45 +2,61 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Nossos Projetos Faz bem</title> 
+    <title>Nossos Projetos - Faz Bem</title> 
     
     <link rel="stylesheet" href="css/style.css"> 
 </head>
-    <header>
-        <h1 class="logo">Faz bem</h1> 
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="cadastro.html">Participe</a></li> 
-                </ul>
-            </nav>
-    </header>
 
+<body>
+
+    <header>
+        <h1 class="logo">Faz Bem</h1> 
+        
+        <button id="btn-mobile" 
+                aria-expanded="false" 
+                aria-controls="main-nav" 
+                aria-label="Abrir menu">
+            <span id="hamburger"></span> 
+        </button>
+
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Participe</a></li> 
+            </ul>
+        </nav>
+    </header>
+    
     <main>
-        <img src="imagens/logofazbem.png" width="250px">
-        
-        <h1>Nossos Projetos</h1>
-        
+        <section id="sobre">
+            <img src="imagens/logofazbem.png" width="250" alt="Logo da ONG Faz Bem">
+            <h1>Nossos Projetos</h1>
+            
+            <p class="missao">
+                A ONG Faz Bem tem como missão promover o bem-estar social e ambiental por meio de ações solidárias e educativas.
+                Nossos projetos buscam envolver a comunidade em iniciativas que gerem impacto positivo e duradouro.
+            </p>
+
         <div class="projetos-container">
             
             <article class="projeto-card">
                 <img src="imagens/trabalhonacozinha.jpg" alt="Voluntários trabalhando na cozinha comunitária">
                 <h2>Projeto "Cozinha Comunitária"</h2>
-                <p> O projeto Cozinha Comunitária garante acesso à alimentação saudável para pessoas em vulnerabilidade, oferecendo refeições nutritivas diariamente com apoio de doações e voluntários. Além de alimentar, promove educação alimentar, sustentabilidade e aproveitamento integral dos alimentos.
-                    Também funciona como espaço de apoio social, fortalecendo vínculos comunitários e oferecendo oportunidades de capacitação e geração de renda.</p>
+                <p> O projeto Cozinha Comunitária garante acesso à alimentação saudável para pessoas em vulnerabilidade...</p>
             </article>
             
             <article class="projeto-card">
                 <img src="imagens/voluntariosescolas.jpg" alt="Voluntários ajudando crianças em reforço escolar">
                 <h2>Projeto "Reforço Escolar"</h2>
-                <p> O projeto Reforço Escolar oferece suporte pedagógico a estudantes com dificuldades de aprendizagem, complementando o ensino regular e desenvolvendo competências essenciais, como leitura, escrita e raciocínio lógico. As atividades são realizadas por profissionais e voluntários,
-                    em atendimentos individuais ou em pequenos grupos, com metodologias estruturadas que promovem autonomia, engajamento e autoestima.</p>
+                <p> O projeto Reforço Escolar oferece suporte pedagógico a estudantes com dificuldades de aprendizagem...</p>
             </article>
             
-        </div> <section id="voluntariado" class="cta-secao">
+        </div> 
+
+        <section id="voluntariado" class="cta-secao">
             <h2>Seja um Voluntário</h2>
             <p>Você pode fazer a diferença! Nossos projetos dependem de pessoas como você.</p>
             <a href="cadastro.html" class="cta-botao">Quero ser voluntário</a>
@@ -48,14 +64,20 @@
 
         <section id="doacoes" class="cta-secao">
             <h2>Como Doar</h2>
-            <p> Sua doação transforma vidas. Existem várias formas de contribuir com a nossa causa:<br><br><br><br>
-                <span>Via WhatsApp ou Pix:</span> Envie sua doação ou entre em contato pelo número (41) 99873-4882.<br><br><br><br>
-                <span>Por e-mail:</span> Escreva para fazbem.ong@gmail.com e saiba como apoiar nossos projetos.<br><br><br><br>
+            <p> Sua doação transforma vidas. Existem várias formas de contribuir...<br><br>
+                <span>Via WhatsApp ou Pix:</span> (41) 99873-4882.<br><br>
+                <span>Por e-mail:</span> fazbem.ong@gmail.com<br><br>
                 Cada gesto de solidariedade faz a diferença. Junte-se a nós e ajude a espalhar o bem!</p>
             <a href="#" class="cta-botao">Fazer uma doação</a>
         </section>
-    </main> <footer>
-        <p>&copy; 2025 Faz bem. Todos os direitos reservados.</p>
+
+    </main> 
+    
+    <footer>
+        <p>&copy; 2025 Faz Bem. Todos os direitos reservados.</p>
     </footer>
 
-</body> </html>
+    <script src="js/main.js"></script>
+
+</body> 
+</html>

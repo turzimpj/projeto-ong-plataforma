@@ -30,28 +30,24 @@ document.addEventListener("DOMContentLoaded", function() {
             e.target.value = value.slice(0, 15);
         });
     }
-});
 
-document.addEventListener("DOMContentLoaded", function() {
+    const btnMobile = document.getElementById("btn-mobile");
+    const mainNav = document.getElementById("main-nav");
+
+    if (btnMobile && mainNav) {
+        btnMobile.addEventListener("click", function() {
             
-            const steps = document.querySelectorAll(".step");
-            const nextButton = document.querySelector(".btn-proximo");
-            const form = document.querySelector("#cadastro-form");
-            if (nextButton) {
-                nextButton.addEventListener("click", () => {
-                    const currentStep = steps[0];
-                    const inputs = currentStep.querySelectorAll("input[required], select[required]");
-                    let isValid = true;   
-                    inputs.forEach(input => {
-                        if (!input.checkValidity()) {
-                            isValid = false;
-                            input.reportValidity();
-                        }
-                    });
-                    if (isValid) {
-                        steps[0].classList.remove("active");
-                        steps[1].classList.add("active");
-                    }
-                });
+            mainNav.classList.toggle("active");
+
+            const isExpanded = mainNav.classList.contains("active");
+            btnMobile.setAttribute("aria-expanded", isExpanded);
+
+            if (isExpanded) {
+                btnMobile.setAttribute("aria-label", "Fechar menu");
+            } else {
+                btnMobile.setAttribute("aria-label", "Abrir menu");
             }
         });
+    }
+
+});
