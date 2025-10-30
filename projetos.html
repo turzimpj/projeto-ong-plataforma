@@ -1,26 +1,61 @@
-<main>
-    <h1>Nossos Projetos</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    
+    <title>Nossos Projetos Faz bem</title> 
+    
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+    <header>
+        <h1 class="logo">Faz bem</h1> 
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="cadastro.html">Participe</a></li> 
+                </ul>
+            </nav>
+    </header>
 
-    <article>
-        <h2>Projeto "Cozinha Comunitária"</h2>
-        <img src="../projeto-ong-atividade1/imagens/trabalhonacozinha.jpg" alt="850px">
-        <p>Descrição do projeto, seu impacto e resultados...</p>
-    </article>
-
-    <article>
-        <h2>Projeto "Reforço Escolar"</h2>
-        <img src="../projeto-ong-atividade1/imagens/voluntariosescolas.jpg" alt="850px">
-        <p>Descrição do projeto de educação...</p>
-    </article>
-
-    <section id="voluntariado">
-        <h2>Seja um Voluntário</h2>
-        <p>Você pode fazer a diferença! Nossos projetos dependem de pessoas como você. Para participar, basta se cadastrar.</p>
-        <a href="cadastro.html">Quero ser voluntário</a>
-    </section>
-
-    <section id="doacoes">
-        <h2>Como Doar</h2>
-        <p>Sua doação transforma vidas. Você pode contribuir de diversas formas...</p>
+    <main>
+        <img src="imagens/logofazbem.png" width="250px">
+        
+        <h1>Nossos Projetos</h1>
+        
+        <div class="projetos-container">
+            
+            <article class="projeto-card">
+                <img src="imagens/trabalhonacozinha.jpg" alt="Voluntários trabalhando na cozinha comunitária">
+                <h2>Projeto "Cozinha Comunitária"</h2>
+                <p> O projeto Cozinha Comunitária garante acesso à alimentação saudável para pessoas em vulnerabilidade, oferecendo refeições nutritivas diariamente com apoio de doações e voluntários. Além de alimentar, promove educação alimentar, sustentabilidade e aproveitamento integral dos alimentos.
+                    Também funciona como espaço de apoio social, fortalecendo vínculos comunitários e oferecendo oportunidades de capacitação e geração de renda.</p>
+            </article>
+            
+            <article class="projeto-card">
+                <img src="imagens/voluntariosescolas.jpg" alt="Voluntários ajudando crianças em reforço escolar">
+                <h2>Projeto "Reforço Escolar"</h2>
+                <p> O projeto Reforço Escolar oferece suporte pedagógico a estudantes com dificuldades de aprendizagem, complementando o ensino regular e desenvolvendo competências essenciais, como leitura, escrita e raciocínio lógico. As atividades são realizadas por profissionais e voluntários,
+                    em atendimentos individuais ou em pequenos grupos, com metodologias estruturadas que promovem autonomia, engajamento e autoestima.</p>
+            </article>
+            
+        </div> <section id="voluntariado" class="cta-secao">
+            <h2>Seja um Voluntário</h2>
+            <p>Você pode fazer a diferença! Nossos projetos dependem de pessoas como você.</p>
+            <a href="cadastro.html" class="cta-botao">Quero ser voluntário</a>
         </section>
-</main>
+
+        <section id="doacoes" class="cta-secao">
+            <h2>Como Doar</h2>
+            <p> Sua doação transforma vidas. Existem várias formas de contribuir com a nossa causa:<br><br><br><br>
+                <span>Via WhatsApp ou Pix:</span> Envie sua doação ou entre em contato pelo número (41) 99873-4882.<br><br><br><br>
+                <span>Por e-mail:</span> Escreva para fazbem.ong@gmail.com e saiba como apoiar nossos projetos.<br><br><br><br>
+                Cada gesto de solidariedade faz a diferença. Junte-se a nós e ajude a espalhar o bem!</p>
+            <a href="#" class="cta-botao">Fazer uma doação</a>
+        </section>
+    </main> <footer>
+        <p>&copy; 2025 Faz bem. Todos os direitos reservados.</p>
+    </footer>
+
+</body> </html>
