@@ -64,7 +64,7 @@ Este é um projeto web estático. Não há necessidade de instalação de depend
 
 1.  **Clone o Repositório**
     ```bash
-    git clone [https://github.com/seu-usuario/faz-bem.git](https://github.com/seu-usuario/faz-bem.git)
+    git clone [https://github.com/turzimpj/faz-bem.git](https://github.com/turzimpj/faz-bem.git)
     ```
 
 2.  **Acesse a Pasta**
